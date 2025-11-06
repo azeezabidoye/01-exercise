@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="box" style={{ background: colorName }}>
-        App
+        {colorName}
       </div>
 
       <form>
