@@ -19,11 +19,10 @@ const App = () => {
         <input
           type="text"
           required
-          placeholder="Insert favorite color..."
+          placeholder="Insert color name..."
           onChange={handleChange}
         />
       </form>
-      <p>{colorName}</p>
     </div>
   );
 };
