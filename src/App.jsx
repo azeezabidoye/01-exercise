@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const App = () => {
-  const [colorName, setColorName] = useState("");
+  const [colorName, setColorName] = useState("Empty value");
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -17,9 +17,10 @@ const App = () => {
 
       <form>
         <input
+          autoFocus
           type="text"
           required
-          placeholder="Insert color name..."
+          placeholder="Add color name..."
           onChange={handleChange}
         />
       </form>
