@@ -4,6 +4,7 @@ import Input from "./components/Input";
 
 const App = () => {
   const [colorName, setColorName] = useState("");
+  const [hexValue, setHexValue] = useState("");
 
   // const handleChange = (e) => {
   //   e.preventDefault();
@@ -13,8 +14,12 @@ const App = () => {
 
   return (
     <div className="App">
-      <Square colorValue={colorName} />
-      <Input colorValue={colorName} setColorValue={setColorName} />
+      <Square colorValue={colorName} hexValue={hexValue} />
+      <Input
+        colorValue={colorName}
+        setColorValue={setColorName}
+        setHexValue={setHexValue}
+      />
     </div>
   );
 };
