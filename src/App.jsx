@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Square from "./components/Square";
+import Input from "./components/Input";
 
 const App = () => {
   const [colorName, setColorName] = useState("Empty value");
@@ -10,21 +12,10 @@ const App = () => {
   };
 
   return (
-    <div className="App">
-      <div className="box" style={{ background: colorName }}>
-        {colorName}
-      </div>
-
-      <form>
-        <input
-          autoFocus
-          type="text"
-          required
-          placeholder="Add color name..."
-          onChange={handleChange}
-        />
-      </form>
-    </div>
+    <>
+      <Square />
+      <Input />
+    </>
   );
 };
 
