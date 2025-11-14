@@ -5,6 +5,7 @@ import Input from "./components/Input";
 const App = () => {
   const [colorName, setColorName] = useState("");
   const [hexValue, setHexValue] = useState("");
+  const [isDarkText, setIsDarkText] = useState(true);
 
   // const handleChange = (e) => {
   //   e.preventDefault();
@@ -14,11 +15,17 @@ const App = () => {
 
   return (
     <div className="App">
-      <Square colorValue={colorName} hexValue={hexValue} />
+      <Square
+        colorValue={colorName}
+        hexValue={hexValue}
+        isDarkText={isDarkText}
+      />
       <Input
         colorValue={colorName}
         setColorValue={setColorName}
         setHexValue={setHexValue}
+        isDarkText={isDarkText}
+        setIsDarkText={setIsDarkText}
       />
     </div>
   );
