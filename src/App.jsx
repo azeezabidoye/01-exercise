@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Square from "./components/Square";
 import Input from "./components/Input";
 
@@ -12,10 +12,10 @@ const App = () => {
   };
 
   return (
-    <>
-      <Square />
-      <Input />
-    </>
+    <div className="App">
+      <Square colorValue={colorName} />
+      <Input colorValue={colorName} setColorValue={setColorName} />
+    </div>
   );
 };
 
